@@ -37,6 +37,7 @@ func testPost() {
 
 	payload := strings.NewReader("name=cute&email=test@a.a")
 	req, _ := http.NewRequest("POST", url, payload)
+	req.Header.Set("Content-Type", "application/x-www-form-urlencoded;")
 
 	client := &http.Client{}
 	resp, _ := client.Do(req)
