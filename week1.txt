@@ -1,0 +1,11 @@
+什麼是heap ? 什麼是stack ？
+ ans：
+  - heap 是 構造優先級隊列
+  - stack 是 棧
+
+queue 的儲存方式屬於heap 還是stack? 
+ ans：heap
+
+說明heap 和stack 記憶體的回收機制
+ ans：golang在編譯器會動態分辨出哪些變量需要分配在堆上、哪些需要在棧上，以此提高gc效率，對開發者來說是透明的
+ https://blog.yiz96.com/golang-mm-gc/
